@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-bg: #ffffff;
+  --color-fg: #09090b;
+  --color-accent: #f97316;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-bg: #09090b;
+    --color-fg: #fafafa;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+}
+
+
+/* UI design tokens — shared by swift-rust ui and shadcn/ui.
+   Components reference these via the @theme inline mapping below
+   (bg-primary, text-muted-foreground, border-border, …).
+   Retheme by editing the --ui-* values (light + .dark). */
+:root {
+  --ui-bg: #ffffff;
+  --ui-fg: #09090b;
+  --ui-card: #ffffff;
+  --ui-card-fg: #09090b;
+  --ui-popover: #ffffff;
+  --ui-popover-fg: #09090b;
+  --ui-primary: #18181b;
+  --ui-primary-fg: #fafafa;
+  --ui-secondary: #f4f4f5;
+  --ui-secondary-fg: #18181b;
+  --ui-muted: #f4f4f5;
+  --ui-muted-fg: #71717a;
+  --ui-accent: #f4f4f5;
+  --ui-accent-fg: #18181b;
+  --ui-destructive: #ef4444;
+  --ui-destructive-fg: #fafafa;
+  --ui-border: #e4e4e7;
+  --ui-input: #e4e4e7;
+  --ui-ring: #18181b;
+  --ui-radius: 0.5rem;
+}
+
+.dark {
+  --ui-bg: #09090b;
+  --ui-fg: #fafafa;
+  --ui-card: #09090b;
+  --ui-card-fg: #fafafa;
+  --ui-popover: #09090b;
+  --ui-popover-fg: #fafafa;
+  --ui-primary: #fafafa;
+  --ui-primary-fg: #18181b;
+  --ui-secondary: #27272a;
+  --ui-secondary-fg: #fafafa;
+  --ui-muted: #27272a;
+  --ui-muted-fg: #a1a1aa;
+  --ui-accent: #27272a;
+  --ui-accent-fg: #fafafa;
+  --ui-destructive: #7f1d1d;
+  --ui-destructive-fg: #fafafa;
+  --ui-border: #27272a;
+  --ui-input: #27272a;
+  --ui-ring: #d4d4d8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --ui-bg: #09090b;
+    --ui-fg: #fafafa;
+    --ui-card: #09090b;
+    --ui-card-fg: #fafafa;
+    --ui-popover: #09090b;
+    --ui-popover-fg: #fafafa;
+    --ui-primary: #fafafa;
+    --ui-primary-fg: #18181b;
+    --ui-secondary: #27272a;
+    --ui-secondary-fg: #fafafa;
+    --ui-muted: #27272a;
+    --ui-muted-fg: #a1a1aa;
+    --ui-accent: #27272a;
+    --ui-accent-fg: #fafafa;
+    --ui-destructive: #7f1d1d;
+    --ui-destructive-fg: #fafafa;
+    --ui-border: #27272a;
+    --ui-input: #27272a;
+    --ui-ring: #d4d4d8;
+  }
+}
+
+@theme inline {
+  --color-background: var(--ui-bg);
+  --color-foreground: var(--ui-fg);
+  --color-card: var(--ui-card);
+  --color-card-foreground: var(--ui-card-fg);
+  --color-popover: var(--ui-popover);
+  --color-popover-foreground: var(--ui-popover-fg);
+  --color-primary: var(--ui-primary);
+  --color-primary-foreground: var(--ui-primary-fg);
+  --color-secondary: var(--ui-secondary);
+  --color-secondary-foreground: var(--ui-secondary-fg);
+  --color-muted: var(--ui-muted);
+  --color-muted-foreground: var(--ui-muted-fg);
+  --color-accent: var(--ui-accent);
+  --color-accent-foreground: var(--ui-accent-fg);
+  --color-destructive: var(--ui-destructive);
+  --color-destructive-foreground: var(--ui-destructive-fg);
+  --color-border: var(--ui-border);
+  --color-input: var(--ui-input);
+  --color-ring: var(--ui-ring);
+  --radius: var(--ui-radius);
+}
