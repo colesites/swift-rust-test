@@ -1,11 +1,17 @@
 {
+  "target": "multivrs",
   "rendering": "ssr-wasm",
   "image": {
     "domains": [],
-    "formats": ["image/avif", "image/webp"]
+    "formats": [
+      "image/avif",
+      "image/webp"
+    ]
   },
   "font": {
-    "subsets": ["latin"],
+    "subsets": [
+      "latin"
+    ],
     "display": "swap"
   },
   "pdf": {

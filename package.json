@@ -13,15 +13,15 @@
     "format": "biome format --write ."
   },
   "dependencies": {
-    "swift-rust": "^1.11.3",
+    "@tailwindcss/postcss": "^4.0.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.460.0",
+    "postcss": "^8.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "postcss": "^8.4.0",
-    "clsx": "^2.1.1",
+    "swift-rust": "^1.12.1",
     "tailwind-merge": "^3.6.0",
-    "lucide-react": "^0.460.0"
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.16",

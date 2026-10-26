@@ -11,7 +11,7 @@
         "postcss": "^8.4.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "swift-rust": "^1.11.3",
+        "swift-rust": "^1.12.1",
         "tailwind-merge": "^3.6.0",
         "tailwindcss": "^4.0.0",
       },
@@ -216,7 +216,7 @@
 
     "source-map-js": ["source-map-js@1.2.2", "", {}, "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="],
 
-    "swift-rust": ["swift-rust@1.11.3", "", { "dependencies": { "@dotenvx/dotenvx": "^2.38.0", "@swift-rust/env": "^0.2.2", "@swift-rust/font": "^0.3.2", "@swift-rust/image": "^1.1.2", "@swift-rust/pdf": "^0.2.3", "@swift-rust/video": "^0.2.2", "react": "^19.0.0", "react-dom": "^19.0.0" }, "bin": { "swift-rust": "bin/swift-rust.js" } }, "sha512-W1tSIVovIq93jV+ddgledzbK6wCNZScUjraFwDsm6TZun3FA5HP1UV+2Nlnd1JEPuudSoFzTeNvRCZmBjRpEPg=="],
+    "swift-rust": ["swift-rust@1.12.1", "", { "dependencies": { "@dotenvx/dotenvx": "^2.38.0", "@swift-rust/env": "^0.2.2", "@swift-rust/font": "^0.3.2", "@swift-rust/image": "^1.1.2", "@swift-rust/pdf": "^0.2.3", "@swift-rust/video": "^0.2.2", "react": "^19.0.0", "react-dom": "^19.0.0" }, "hasInstallScript": true, "bin": { "swift-rust": "bin/swift-rust.js" } }, "sha512-pqnr0Ob+HmZFiM90ZkEgbdq70nMXHGPm5Rd+8WIyXYRJ4+0ocm7/jh/ST4J55vuqyriqOfDd9i4wPjss2z/TGg=="],
 
     "tailwind-merge": ["tailwind-merge@3.7.0", "", {}, "sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA=="],
 
